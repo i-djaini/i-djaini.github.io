@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #4d4949;
+  color: rgb(255, 255, 255);
+}
+
+/* ! NAVBAR */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7b7bdf;
+  padding: 0.1rem 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+nav .logo h1 {
+  font-size: 24px;
+}
+
+nav .link-list a {
+  display: inline-block;
+  font-size: 13px;
+  color: #ffff;
+  margin: 7px;
+  border-bottom: 1px solid transparent;
+}
+
+nav .link-list a:hover {
+  border-bottom: 1px solid white;
+}
+
+
+/* ! Hero Section */
+.hero {
+  height: 56rem;
+  display: flex;
+  align-items: center;
+  background: rgb(100, 100, 114);
+  background: linear-gradient(90deg, rgba(90, 90, 105, 1) 0%, rgb(73, 73, 102) 53%, rgba(53, 60, 61, 1) 100%);
+}
+
+.hero .content {
+  padding: 0 17%;
+}
+
+.hero .content .me {
+  line-height: 3rem;
+}
+
+.hero .content h1 {
+  font-size: 3rem;
+  line-height: 3.4rem;
+}
+
+.hero .content h1 span {
+  color: #7b7bdf;
+}
+
+.hero .content h2 {
+  font-size: 1.6rem;
+}
+
+.hero .content .p1 {
+  max-width: 80%;
+  font-size: 1.1rem;
+  color: #ececec;
+  margin: 3px 0;
+}
+
+.hero .content button {
+  margin: 1rem 0;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.hero .content button .p2 a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000000;
+}
+
+.hero .content button:hover {
+  background-color: #7b7bdf;
+}
+
+
+/* ! About Section */
+.about .about-title,
+.project .project-title,
+.kontak .kontak-title {
+  text-align: center;
+  padding: 5rem 0 5rem;
+  font-size: 2.5rem;
+}
+
+.about .about-title span,
+.project .project-title span,
+.kontak .kontak-title span {
+  color: #7b7bdf;
+}
+
+.about .content {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 9rem;
+}
+
+.about .content .p {
+  margin: 0 3rem;
+  padding: 4rem;
+  border-radius: 0.1px;
+  background: #4d4949;
+  box-shadow: 8px 8px 16px #484545,
+    -8px -8px 16px #524d4d;
+}
+
+.about .content p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  max-width: 60rem;
+  margin: 0 2rem;
+}
+
+/* ! Project Section */
+.project {
+  background-color: #524e4e;
+}
+.project .project-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.project .project-content .row {
+  margin: 3rem;
+  border-radius: 10px;
+  background: #4d4949;
+  box-shadow: 8px 8px 16px #484545,
+    -8px -8px 16px #524d4d;
+}
+
+.project .project-content .row a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.project .project-content .row img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 27rem;
+  object-fit: cover;
+}
+.project .project-content .row .external-link {
+  display: none;
+}
+
+.project .project-content .row:hover .external-link {
+  display: block;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project .project-content .row:hover {
+  transform: scale(1.1);
+  height: 100%;
+}
+
+/* ! Kontak Section */
+.kontak {
+  height: 46rem;
+}
+.kontak .kontak-text .kontak-icon{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.kontak .kontak-icon {
+  max-width: 60%;
+}
+.kontak .kontak-icon p {
+  font-size: 1.2rem;
+  padding-bottom: 6rem;
+}
+.kontak .kontak-icon a {
+  margin-right: 2.6rem;
+  color: #ffff;
+}
+
+.kontak .kontak-icon a:hover {
+  color: #7b7bdf;
+}
+
+/* ! Section Footer */
+footer {
+  background-color: #7b7bdf;
+  text-align: center;
+  padding: 3rem 0;
+  margin-top: 4rem;
+}
+
+footer .credit {
+  color: #ffffff;
+}
+
+footer .credit p {
+  font-size: 1.2rem;
+}
+
+footer .credit a {
+  color: #000000;
+  font-weight: 700;
+}
