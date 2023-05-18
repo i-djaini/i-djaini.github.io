@@ -1,0 +1,174 @@
+:root {
+  --primary: #ffff00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+  background-color: #f7f6f6;
+}
+
+/* ! Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--primary);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+
+}
+
+nav .logo {
+  font-size: 1rem;
+  margin-left: 4rem;
+}
+
+nav .list {
+  margin: auto 4rem;
+}
+
+nav .list a {
+  margin-right: 1.7rem;
+  color: black;
+  font-size: 1.1rem;
+}
+
+nav .list a:hover {
+  border-bottom: 1px solid black;
+}
+
+/* ! Hero Section */
+.hero {
+  margin-top: 2rem;
+  height: 55.7rem;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.9)), url('../img/bg-hero.jpg');
+  background-size: cover;
+}
+
+.hero .me {
+  padding: 0 9%;
+  color: white;
+}
+
+.hero .me h1 {
+  font-size: 3rem;
+  padding-bottom: 0.4rem;
+}
+
+.hero .me p {
+  max-width: 87%;
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding-bottom: 1rem;
+}
+
+.hero .hero-btn {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.hero .hero-btn:hover {
+  background-color: var(--primary);
+}
+
+/* ! Tentang Kami */
+.about .about-title h1,
+.kelas .kelas-title {
+  text-align: center;
+  padding: 6rem 0;
+  font-size: 2rem;
+}
+
+.about .about-content {
+  display: flex;
+  justify-content: center;
+  margin: 0 5%;
+}
+
+.about .about-content .p1 {
+  margin: 0 1.5rem;
+  padding: 2rem;
+  border-radius: 0px;
+  background: #ffffff;
+  box-shadow: -6px -6px 2px #ededed,
+    6px 6px 2px #ffffff;
+}
+
+.about .about-content p {
+  font-weight: 200;
+  font-size: 1.3rem;
+  max-width: 50rem;
+}
+
+/* ! Kelas D */
+.kelas .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 5%;
+}
+
+.kelas .row .row-item img {
+  width: 16rem;
+  object-fit: cover;
+}
+
+.kelas .row .row-item {
+  margin: 2rem 1rem;
+  padding: 0.2rem;
+  border-radius: 0px;
+  background: #dad7d7;
+  box-shadow: 20px 20px 60px #b9b7b7,
+    -20px -20px 60px #fbf7f7;
+}
+
+.kelas .row .row-item .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kelas .row .row-item .info p {
+  margin: auto 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.kelas .row .row-item .info a {
+  margin: auto 1rem;
+  color: black;
+}
+.kelas .row .row-item .info a:hover {
+  color: var(--primary);
+}
+
+
+
+/* ! Responsive Media Query */
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 70.5%;
+  }
+  .hero {
+    background-position: center;
+  }
+
+  .about .about-content {
+    flex-wrap: wrap;
+  }
+}
