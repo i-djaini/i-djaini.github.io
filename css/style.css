@@ -1,4 +1,5 @@
 * {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -47,20 +48,23 @@ nav .link-list a:hover {
 
 /* ! Hero Section */
 .hero {
-  height: 56rem;
+  height: 58rem;
   display: flex;
   align-items: center;
-  background: rgb(100, 100, 114);
-  background: linear-gradient(90deg, rgba(90, 90, 105, 1) 0%, rgb(73, 73, 102) 53%, rgba(53, 60, 61, 1) 100%);
+  background-image: url(../img/wave.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero .content {
-  padding: 0 17%;
+  padding: 0 11%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.hero .content .me {
-  line-height: 3rem;
-}
 
 .hero .content h1 {
   font-size: 3rem;
@@ -75,7 +79,7 @@ nav .link-list a:hover {
   font-size: 1.6rem;
 }
 
-.hero .content .p1 {
+.hero .content p {
   max-width: 80%;
   font-size: 1.1rem;
   color: #ececec;
@@ -88,6 +92,7 @@ nav .link-list a:hover {
   padding: 1rem 1.5rem;
   border-radius: 5px;
 }
+
 .hero .content button a {
   font-weight: 700;
   font-size: 1rem;
@@ -99,6 +104,9 @@ nav .link-list a:hover {
   background-color: #7b7bdf;
 }
 
+.hero .hero-img img {
+  width: 29rem;
+}
 
 /* ! About Section */
 .about .about-title,
@@ -140,7 +148,10 @@ nav .link-list a:hover {
 
 /* ! Project Section */
 .project {
-  background-color: #524e4e;
+  background-image: url(../img/polygon-scatter.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .project .project-content {
@@ -148,6 +159,7 @@ nav .link-list a:hover {
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
+  padding-bottom: 4rem;
 }
 
 .project .project-content .row {
@@ -156,6 +168,7 @@ nav .link-list a:hover {
   background: #4d4949;
   box-shadow: 8px 8px 16px #484545,
     -8px -8px 16px #524d4d;
+  border-radius: 10px;
 }
 
 .project .project-content .row a {
@@ -166,6 +179,8 @@ nav .link-list a:hover {
 .project .project-content .row img {
   width: 27rem;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .project .project-content .row .external-link {
@@ -204,18 +219,22 @@ nav .link-list a:hover {
     -8px -8px 16px #524d4d;
   padding: 3rem;
 }
+
 .kontak .kontak-text p {
   font-size: 1.2rem;
   font-weight: 300;
   margin-bottom: 10rem;
 }
+
 .kontak .kontak-text .sosial {
   height: 1.5rem;
 }
+
 .kontak .text a {
   margin-right: 1rem;
   color: #ffff;
 }
+
 .kontak .text a:hover {
   color: #7b7bdf;
 }
@@ -229,6 +248,7 @@ nav .link-list a:hover {
   box-shadow: 8px 8px 16px #484545,
     -8px -8px 16px #524d4d;
 }
+
 .kontak .kontak-text form .row {
   display: flex;
   align-items: center;
@@ -236,23 +256,29 @@ nav .link-list a:hover {
   margin: 2rem 0;
   border: 1px solid rgb(104, 103, 103);
 }
+
 .kontak .kontak-text form .row:hover {
   border: 1px solid #7b7bdf;
   background-color: #484545;
 }
+
 .kontak .kontak-text form input {
   width: 100%;
   font-size: 1rem;
   margin-left: 1rem;
   background-color: transparent;
-  color: white;;
+  color: white;
+  ;
 }
+
 .kontak .kontak-text form .icon {
   height: 1.5rem;
 }
+
 .kontak .kontak-text .button {
   padding: 1rem 0;
 }
+
 .kontak .kontak-text button {
   padding: 1rem;
   font-size: 1rem;
@@ -260,6 +286,7 @@ nav .link-list a:hover {
   color: #ffffff;
   cursor: pointer;
 }
+
 .kontak .kontak-text button:hover {
   background-color: #7b7bdf;
 }
@@ -292,12 +319,15 @@ footer .credit a {
   html {
     font-size: 62.5%;
   }
+
   .kontak .kontak-text {
     flex-wrap: wrap;
   }
+
   .kontak .kontak-text .text {
     text-align: center;
   }
+
   .about .about-content p {
     max-width: 70rem;
   }
@@ -308,6 +338,7 @@ footer .credit a {
   html {
     font-size: 59%;
   }
+
   nav .link-list {
     position: absolute;
     top: 100%;
@@ -317,17 +348,26 @@ footer .credit a {
 
   .hero .content {
     padding: 13%;
+
+    flex-wrap: wrap;
+  }
+
+  .hero .content>.hero-img:last-child {
+    order: -1;
   }
 
   .hero .content button .p2 a {
     font-size: 8px;
   }
+
   .about .content {
     flex-wrap: wrap;
   }
+
   .project .project-content .row img {
     width: 37rem;
   }
+
   .kontak .kontak-text .kontak-icon .sosial {
     width: 1.5rem;
     height: 1.5rem;
