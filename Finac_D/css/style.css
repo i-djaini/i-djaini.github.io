@@ -123,6 +123,7 @@ nav .list a:hover {
 }
 .about .about-content img {
   width: 25rem;
+  height: 25rem;
   object-fit: cover;
   border-radius: 50%;
   margin: 0 3rem;
@@ -137,7 +138,10 @@ nav .list a:hover {
 
 /* ! Kelas D */
 .kelas {
-  background-color: #d4d0d0;
+  background-image: url(../img/circle-scatter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .kelas .row {
   display: flex;
@@ -147,17 +151,20 @@ nav .list a:hover {
 }
 
 .kelas .row .row-item img {
-  height: 16rem;
+  height: 18rem;
   width: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
 
 .kelas .row .row-item {
-  width: 16rem;
+  width: 18rem;
   border-radius: 5px;
   margin: 2rem 1rem;
-  border: 1px solid var(--second);
+  border: 1px solid #8d6160;
+  background-color: #8d6160;
+  box-shadow: #b9b7b7;
+  color: #e4e0e0;
 }
 
 .kelas .row .row-item .info {
@@ -173,10 +180,10 @@ nav .list a:hover {
 }
 .kelas .row .row-item .info a {
   margin: auto 1rem;
-  color: black;
+  color: #e4e0e0;
 }
 .kelas .row .row-item .info a:hover {
-  color: var(--primary);
+  color: black;
 }
 
 
@@ -201,6 +208,13 @@ nav .list a:hover {
     padding: 3rem;
   }
   .about .about-content img {
-    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .kelas {
+    background-image: url(../img/circle-scatter-hp.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
