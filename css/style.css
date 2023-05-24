@@ -1,5 +1,4 @@
 * {
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -39,6 +38,9 @@ nav .link-list a {
   color: #ffff;
   margin: 7px;
   border-bottom: 1px solid transparent;
+}
+#hamburger-menu {
+  display: none;
 }
 
 nav .link-list a:hover {
@@ -339,11 +341,17 @@ footer .credit a {
     font-size: 59%;
   }
 
-  nav .link-list {
+  nav .link-list a {
     position: absolute;
     top: 100%;
     right: -100%;
     background-color: #7b7bdf;
+  }
+  #hamburger-menu {
+    display: inline-block;
+    top: 0;
+    right: 10%;
+
   }
 
   .hero .content {
