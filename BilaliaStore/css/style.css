@@ -140,10 +140,11 @@ body {
 .about .about-content p {
   font-weight: 300;
   margin: auto 4rem;
+  text-align: justify;
 }
 
 .about .about-content img {
-  max-width: 34%;
+  width: 30rem;
   object-fit: cover;
   border: 0.1px solid #2f3030;
 }
@@ -377,9 +378,7 @@ footer .social a:hover {
     flex-wrap: wrap;
   }
 
-  .about .about-content img {
-    max-width: 90%;
-  }
+
 
   .about .about-content p {
     padding-top: 2rem;
@@ -387,11 +386,6 @@ footer .social a:hover {
 
   .produk .produk-list {
     flex-wrap: wrap;
-  }
-
-  .produk .produk-list img {
-    width: 40rem;
-    height: 45rem;
   }
 
 

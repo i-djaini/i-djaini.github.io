@@ -25,7 +25,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 111;
 }
 
 nav .logo h1 {
@@ -39,6 +39,7 @@ nav .link-list a {
   margin: 7px;
   border-bottom: 1px solid transparent;
 }
+
 #hamburger-menu {
   display: none;
 }
@@ -54,7 +55,6 @@ nav .link-list a:hover {
   display: flex;
   align-items: center;
   background-image: url(../img/wave.svg);
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -132,12 +132,13 @@ nav .link-list a:hover {
 }
 
 .about .content .p {
-  margin: 0 3rem;
-  padding: 4rem;
-  border-radius: 0.1px;
+  margin: 2rem;
+  padding: 3rem 1rem;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
   background: #4d4949;
-  box-shadow: 8px 8px 16px #484545,
-    -8px -8px 16px #524d4d;
+  -webkit-box-shadow: 13px 13px 34px #444040, -13px -13px 34px #565252;
+  box-shadow: 13px 13px 34px #444040, -13px -13px 34px #565252;
   font-weight: 300;
 }
 
@@ -166,11 +167,11 @@ nav .link-list a:hover {
 
 .project .project-content .row {
   margin: 3rem;
-  border-radius: 1px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
   background: #4d4949;
-  box-shadow: 8px 8px 16px #484545,
-    -8px -8px 16px #524d4d;
-  border-radius: 10px;
+  -webkit-box-shadow: 13px 13px 34px #444040, -13px -13px 34px #565252;
+  box-shadow: 13px 13px 34px #444040, -13px -13px 34px #565252;
 }
 
 .project .project-content .row a {
@@ -337,16 +338,13 @@ footer .credit a {
 
 /* Mobile */
 @media (max-width: 550px) {
-  html {
-    font-size: 59%;
-  }
-
   nav .link-list a {
     position: absolute;
     top: 100%;
     right: -100%;
     background-color: #7b7bdf;
   }
+
   #hamburger-menu {
     display: inline-block;
     top: 0;
