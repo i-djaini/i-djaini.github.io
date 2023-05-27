@@ -97,5 +97,6 @@ section .card .row p a {
   }
   section .card {
     width: 80%;
+    padding: 7rem 1.3rem;
   }
 }
