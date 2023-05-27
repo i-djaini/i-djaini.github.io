@@ -59,6 +59,7 @@ section .card .row form .row-bottom {
   padding: 1rem 0.5rem;
   text-align: center;
   color: #dbd9d9;
+  font-weight: 200;
 }
 section .card .row form .row-bottom .row-right label a {
   color: #ec3838;
@@ -75,8 +76,10 @@ section .card .row form .row-bottom .row-right label a {
   border-radius: 5px;
 }
 
+
 section .card .row-signup p {
   color: white;
+  font-weight: 100;
 }
 section .card .row-signup a {
   color: #4d4dff;
@@ -89,6 +92,7 @@ section .card .copy {
 }
 section .card .copy p {
   color: #afafaf;
+  font-weight: 300;
 }
 section .card .copy p a {
   color: #505099;
