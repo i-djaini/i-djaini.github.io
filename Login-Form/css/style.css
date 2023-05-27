@@ -52,35 +52,44 @@ section .row .row-card {
   font-size: 1rem;
 }
 
-form .row-radio {
+section .card .row form .row-bottom {
   display: flex;
   justify-content: space-between;
-  margin: 0 5px;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  color: #dbd9d9;
 }
-
-section form .row-radio a {
-  color: #f84e4e;
-  padding: 0.3rem;
+section .card .row form .row-bottom .row-right label a {
+  color: #ec3838;
 }
 
 .row form button {
   width: 100%;
   padding: 1rem;
   background-color: rgb(53, 53, 224);
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: aliceblue;
   cursor: pointer;
 }
 
-section .card .row p {
-  color: #dbd9d9;
+section .card .row-signup p {
+  color: white;
+}
+section .card .row-signup a {
+  color: #4d4dff;
 }
 
-section .card .row p a {
-  color: #1e1ec0;
+
+section .card .copy {
+  margin-top: 3rem;
+  margin-bottom: -6rem;
 }
-
-
+section .card .copy p {
+  color: #afafaf;
+}
+section .card .copy p a {
+  color: #505099;
+}
 
 /* ! RESPONSIVE MEDIA QUERY */
 /* Tablet */
