@@ -24,7 +24,7 @@ section .card {
   padding: 7rem 3rem;
   margin: auto 0;
   text-align: center;
-  background-color: #29294d;
+  background-color: #17174b;
   border-radius: 10px;
 }
 
@@ -97,6 +97,9 @@ section .card .copy p a {
 /* ! RESPONSIVE MEDIA QUERY */
 /* Tablet */
 @media (max-width: 1000px) {
+  section {
+    height: 100vh;
+  }
   section .card {
     width: 70%;
   }
@@ -106,6 +109,9 @@ section .card .copy p a {
 @media (max-width: 550px) {
   html {
     font-size: 75%;
+  }
+  section {
+    height: 100vh;
   }
   section .card {
     width: 80%;
