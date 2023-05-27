@@ -92,8 +92,10 @@ section .card .row p a {
 
 /* Mobile */
 @media (max-width: 550px) {
+  html {
+    font-size: 75%;
+  }
   section .card {
     width: 80%;
-    height: 50%;
   }
 }
