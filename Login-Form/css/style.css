@@ -24,7 +24,7 @@ section .card {
   padding: 7rem 3rem;
   margin: auto 0;
   text-align: center;
-  background-color: rgb(41, 41, 77);
+  background-color: #29294d;
   border-radius: 10px;
 }
 
@@ -50,6 +50,7 @@ section .row .row-card {
   padding: 1rem;
   margin: 0.3rem 0;
   font-size: 1rem;
+  border-radius: 5px;
 }
 
 section .card .row form .row-bottom {
@@ -66,10 +67,12 @@ section .card .row form .row-bottom .row-right label a {
 .row form button {
   width: 100%;
   padding: 1rem;
-  background-color: rgb(53, 53, 224);
+  background-color: transparent;
   font-size: 1.3rem;
   color: aliceblue;
   cursor: pointer;
+  background-color: #4a4aad;
+  border-radius: 5px;
 }
 
 section .card .row-signup p {
