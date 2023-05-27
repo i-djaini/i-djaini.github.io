@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+body {
+  font-family: "inter", sans-serif;
+  background-color: #181616;
+}
+
+/* ! Navbar */
+nav {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.041);
+  padding: 1rem 4rem;
+  align-items: center;
+}
+nav .logo {
+  display: flex;
+  font-weight: 700;
+  color: #ffffff;
+  align-items: center;
+}
+nav .logo img {
+  width: 3rem;
+  height: 3rem;
+}
+nav .logo h1 span {
+  color: red;
+}
+
+nav .list {
+  display: flex;
+}
+nav .list .list-icon i {
+  font-size: 1.2rem;
+}
+nav .list .list-icon a {
+  color: #ffffff;
+}
+nav .list .list-icon {
+  margin: 0 1.5rem;
+  font-size: 1rem;
+}
+
+nav .list a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+nav .search i {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+
+
+/* ! Header Section */
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+
+.hero .search-btn {
+  width: 96%;
+  margin: 2rem 0;
+}
+.hero .search-btn input {
+  width: 100%;
+  padding: 1.4rem;
+  font-size: 1.2rem;
+  background-color: #201f1f;
+  color: #ffffff;
+}
+
+/* ! Content Section */
+.content .title {
+  display: flex;
+  align-items: center;
+  padding: 0 3.1rem;
+  color: #ffffff;
+}
+.content .title .text {
+  color: red;
+  margin-right: 0.5rem;
+}
+
+.content .movie {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content .movie .card {
+  margin: 1rem;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: #3b3b3b;
+  position: relative;
+  overflow: hidden;
+}
+
+.content .movie .card img {
+  width: 16rem;
+  height: 20;
+  border-radius: 10px;
+}
+
+.content .movie .card h3 {
+  padding: 1rem 0;
+}
+.hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transform: translateX(100%);
+  top: 0;
+  transition: 0.2s;
+  border-radius: 10px;
+  background-color: rgb(37, 32, 32, 0.8);
+  width: 16rem;
+  height: 25rem;
+  cursor: pointer;
+}
+.hover i {
+  font-size: 5rem;
+}
+.content .movie .card:hover .hover {
+  transform: translateX(0);
+}
