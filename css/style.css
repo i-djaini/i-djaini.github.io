@@ -3,7 +3,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: none;
   border: none;
   text-decoration: none;
   scroll-behavior: smooth;
@@ -23,8 +22,10 @@ nav {
   align-items: center;
   background-color: rgb(123, 123, 223,0.8);
   padding: 0.5rem 10%;
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   z-index: 111;
 }
 
@@ -40,13 +41,14 @@ nav .link-list a {
   border-bottom: 1px solid transparent;
 }
 
+nav .link-list a:hover {
+  border-bottom: 1px solid white;
+}
+
 #hamburger-menu {
   display: none;
 }
 
-nav .link-list a:hover {
-  border-bottom: 1px solid white;
-}
 
 
 /* ! Hero Section */
@@ -58,8 +60,8 @@ nav .link-list a:hover {
   background-position: center;
   background-size: cover;
   object-fit: cover;
+  overflow-x: hidden;
 }
-
 .hero .content {
   padding: 0 11%;
   display: flex;
@@ -67,8 +69,6 @@ nav .link-list a:hover {
   align-items: center;
 
 }
-
-
 .hero .content h1 {
   font-size: 3rem;
   line-height: 3.4rem;
@@ -101,13 +101,10 @@ nav .link-list a:hover {
   font-size: 1rem;
   color: #000000;
 }
-
-
 .hero .content button:hover {
   background-color: #7b7bdf;
 }
-
-.hero .hero-img img {
+.hero img {
   width: 29rem;
 }
 
@@ -339,23 +336,28 @@ footer .credit a {
 
 /* Mobile */
 @media (max-width: 550px) {
-  nav .link-list a {
+  .hero {
+    height: 100vh;
+  }
+  nav {
+    padding: 1.3rem;
+  }
+  nav .link-list {
     position: absolute;
     top: 100%;
     right: -100%;
     background-color: #7b7bdf;
   }
-
+  nav .link-list .active {
+    right: 0;
+  }
   #hamburger-menu {
-    display: inline-block;
+    position: relative;
     top: 0;
-    right: 10%;
-
   }
 
   .hero .content {
     padding: 13%;
-
     flex-wrap: wrap;
   }
 
