@@ -104,8 +104,10 @@ nav .link-list a:hover {
 .hero .content button:hover {
   background-color: #7b7bdf;
 }
+
 .hero img {
-  width: 29rem;
+  width: 23rem;
+  border-radius: 50%;
 }
 
 /* ! About Section */
@@ -164,7 +166,7 @@ nav .link-list a:hover {
 }
 
 .project .project-content .row {
-  margin: 3rem;
+  margin: 1rem;
   -webkit-border-radius: 6px;
   border-radius: 6px;
   background: #4d4949;
@@ -179,9 +181,7 @@ nav .link-list a:hover {
 
 .project .project-content .row img {
   width: 27rem;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
 }
 
 .project .project-content .row .external-link {
@@ -337,7 +337,7 @@ footer .credit a {
 /* Mobile */
 @media (max-width: 550px) {
   .hero {
-    height: 100vh;
+    height: 98vh;
   }
   nav {
     padding: 1.3rem;
@@ -352,18 +352,21 @@ footer .credit a {
     right: 0;
   }
   #hamburger-menu {
-    position: relative;
+    display: inline-flex;
+    z-index: 1;
+    position: fixed;
     top: 0;
+    right: 0;
   }
 
   .hero .content {
-    padding: 13%;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+  }
+  .hero .content img {
+    margin-top: -20rem;
+    margin-bottom: 3rem;
   }
 
-  .hero .content>.hero-img:last-child {
-    order: -1;
-  }
 
   .hero .content button .p2 a {
     font-size: 8px;
