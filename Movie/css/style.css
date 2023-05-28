@@ -14,9 +14,10 @@ body {
 nav {
   display: flex;
   color: white;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.041);
-  padding: 1rem 4rem;
+  padding: 15px;
   align-items: center;
 }
 nav .logo {
@@ -33,24 +34,21 @@ nav .logo h1 span {
   color: red;
 }
 
-nav .list {
+nav .menu .list {
+  list-style: none;
   display: flex;
+  gap: 30px;
 }
-nav .list .list-icon i {
-  font-size: 1.2rem;
-}
-nav .list .list-icon a {
+nav .menu .list li a,
+nav i {
+  font-size: 15px;
   color: #ffffff;
 }
-nav .list .list-icon {
-  margin: 0 1.5rem;
-  font-size: 1rem;
-}
 
-nav .list a:hover {
-  border-bottom: 1px solid #ffffff;
+#toggler,
+nav label {
+  display: none;
 }
-
 nav .search i {
   font-size: 1.7rem;
   cursor: pointer;
@@ -124,7 +122,7 @@ nav .search i {
   border-radius: 10px;
   background-color: rgb(37, 32, 32, 0.8);
   width: 16rem;
-  height: 25rem;
+  height: 24rem;
   cursor: pointer;
 }
 .hover i {
@@ -132,4 +130,38 @@ nav .search i {
 }
 .content .movie .card:hover .hover {
   transform: translateX(0);
+}
+
+
+
+
+
+/* ! Responsive Web */
+/* Mobile */
+@media (max-width: 672px) {
+
+  nav .menu .list {
+    display: none;
+  }
+  nav label {
+    display: inline-flex;
+    cursor: pointer;
+    
+  }
+  #toggler:checked ~ .menu {
+    max-height: 100%;
+  }
+  .content .movie .card h3 {
+    font-size: 10px;
+  }
+  .content .movie .card img{
+    width: 8.4rem;
+  }
+  .hover {
+    width: 8.4rem;
+    height: 12.8rem;
+  }
+  .hover i {
+    font-size: 2rem;
+  }
 }
