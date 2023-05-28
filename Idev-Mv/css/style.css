@@ -19,7 +19,7 @@ nav {
   top: 0;
   justify-content: space-between;
   background-color: rgba(65, 65, 65, 0.5);
-  padding: 15px;
+  padding: 13px;
   align-items: center;
   z-index: 2;
 }
@@ -30,8 +30,8 @@ nav .logo {
   align-items: center;
 }
 nav .logo img {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.7rem;
 }
 nav .logo h1 span {
   color: red;
@@ -141,7 +141,9 @@ nav label {
 /* ! Responsive Web */
 /* Mobile */
 @media (max-width: 672px) {
-
+  nav {
+    padding: 9px;
+  }
   nav .menu .list {
     display: none;
   }
@@ -150,8 +152,8 @@ nav label {
     cursor: pointer;
     
   }
-  #toggler:checked ~ .menu {
-    max-height: 100%;
+  nav label i {
+    font-size: 2rem;
   }
   .content .movie .card {
     margin: 5px;
