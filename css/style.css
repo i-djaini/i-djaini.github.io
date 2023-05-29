@@ -6,6 +6,7 @@ html {
   border: none;
   text-decoration: none;
   scroll-behavior: smooth;
+  outline: none;
 }
 
 body {
@@ -267,9 +268,9 @@ nav .link-list a:hover {
   width: 100%;
   font-size: 1rem;
   margin-left: 1rem;
-  background-color: transparent;
+  background: none;
   color: white;
-  ;
+  outline: none;
 }
 
 .kontak .kontak-text form .icon {
@@ -344,6 +345,7 @@ footer .credit a {
   }
   nav .link-list {
     position: absolute;
+    align-items: center;
     top: 100%;
     right: -100%;
     background-color: #7b7bdf;
