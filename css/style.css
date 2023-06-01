@@ -40,6 +40,7 @@ nav .link-list a {
   color: #ffff;
   margin: 7px;
   border-bottom: 1px solid transparent;
+  transition: 0.2s;
 }
 
 nav .link-list a:hover {
@@ -184,6 +185,9 @@ nav .link-list a:hover {
   width: 27rem;
   border-radius: 10px;
 }
+.project .project-content .row:hover img {
+  filter: blur(2px);
+}
 
 .project .project-content .row .external-link {
   display: none;
@@ -196,12 +200,15 @@ nav .link-list a:hover {
   height: 3rem;
   top: 50%;
   left: 50%;
+  color: #7b7bdf;
   transform: translate(-50%, -50%);
 }
 
-.project .project-content .row:hover {
+.project .project-content .row:hover  {
   transform: scale(1.1);
+  transition: 0.3s;
   height: 100%;
+  border: 1px solid #7b7bdf;
 }
 
 /* ! Kontak Section */
@@ -259,7 +266,8 @@ nav .link-list a:hover {
   border: 1px solid rgb(104, 103, 103);
 }
 
-.kontak .kontak-text form .row:hover {
+.kontak .kontak-text form .row:hover,
+.kontak .kontak-text form .row:active {
   border: 1px solid #7b7bdf;
   background-color: #484545;
 }
