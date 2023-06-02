@@ -165,6 +165,7 @@ body {
 .produk {
   padding: 6rem;
   background-color: #414141;
+  width: 100%;
 }
 
 .produk h2,
@@ -189,7 +190,7 @@ body {
 .produk .produk-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .produk .produk-card {
@@ -244,19 +245,19 @@ body {
   flex-wrap: wrap;
   margin-top: 4rem;
   background-color: #201f1f;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .contact .row .maps {
   flex: 1 1 45rem;
   object-fit: cover;
+  width: 100%;
 
 }
 
 .contact .row form {
   flex: 1 1 45rem;
-  padding: 3rem 3rem;
-  text-align: center;
+  padding: 3rem 1rem;
   background-color: #7e7c7c;
 }
 
@@ -288,14 +289,20 @@ body {
 }
 
 .contact .row form button {
-  margin-top: 3rem;
-  display: inline-block;
-  padding: 1rem 2rem;
+  margin-top: 1rem;
+  padding: 1rem 1rem;
   background-color: #ffffff;
   font-size: 1.6rem;
   border-radius: 0.5%;
   border: 0.1px solid black;
   cursor: pointer;
+}
+.buttonload i {
+  margin-right: 1rem;
+  margin-left: 0;
+}
+.buttonload {
+  display: none;
 }
 
 .contact .row form button:hover {
@@ -306,6 +313,19 @@ body {
   text-decoration: none;
   color: black;
 }
+
+/* ! Alert */
+.alert {
+  text-align: center;
+  display: none;
+  padding: 20px;
+  background-color: #ace7d2;
+  color: black;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+
 
 /* ! Section Footer */
 footer {
@@ -355,20 +375,18 @@ footer .social a:hover {
     right: -100%;
     background: rgb(224, 224, 216,0.4);
     width: 100%;
-    height: 26vh;
+    padding: 3rem 0;
+    transition: all 0.2s;
   }
   .navbar .navbar-nav a{
     font-size: 1.5rem;
-    color: #c6d8d2;
-  }
-  .navbar .navbar-nav.active {
-    right: 0;
-  }
-
-  .navbar .navbar-nav a {
+    color: #ace7d2;
     display: block;
     margin: 1.5rem;
     padding: 1rem;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
   }
 
   .navbar .navbar-nav a::after {
@@ -377,6 +395,9 @@ footer .social a:hover {
 
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
+  }
+  #hamburger-menu {
+    display: inline-block;
   }
 
   .hero .content p {
@@ -410,9 +431,6 @@ footer .social a:hover {
     font-size: 56%;
   }
 
-  #hamburger-menu {
-    display: inline-block;
-  }
   .about .about-content {
     margin: 0;
   }

@@ -73,7 +73,8 @@
   <!-- ! Produk Section Awal -->
   <section class="produk" id="produk">
     <h2 data-aos="fade-up">Produk Kami</h2>
-    <p data-aos="fade-up"> Kami menawarkan berbagai macam rempah-rempah, dari rempah-rempah khas Indonesia hingga bumbu internasional yang
+    <p data-aos="fade-up"> Kami menawarkan berbagai macam rempah-rempah, dari rempah-rempah khas Indonesia hingga bumbu
+      internasional yang
       cocok untuk berbagai jenis masakan</p>
     <div class="produk-list" data-aos="fade-up">
       <div class="produk-card">
@@ -117,27 +118,30 @@
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15956.871038281792!2d122.42556823917084!3d0.9941341637789864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32797fa43c10e91d%3A0x72baabd5ba1d6e43!2sDesa%20Hutakalo!5e0!3m2!1sid!2sid!4v1683963029478!5m2!1sid!2sid"
         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
-
-      <form action="">
+      <form action="" name="Bilalia-Store">
+        <div class="alert"></div>
         <div class="input-group">
           <i data-feather="user"></i>
-          <input type="text" placeholder="Nama">
+          <input type="text" placeholder="Nama" name="Nama">
         </div>
         <div class="input-group">
           <i data-feather="mail"></i>
-          <input type="text" placeholder="Email">
-        </div>
-        <div class="input-group">
-          <i data-feather="phone"></i>
-          <input type="text" placeholder="No hp">
+          <input type="number" placeholder="No Hp" name="NoHp">
         </div>
         <div class="input-group">
           <i data-feather="message-square" class="pesan-img"></i>
-          <input type="text" class="pesan" placeholder="Pesan">
+          <input type="text" class="pesan" placeholder="Pesan" name="Pesan">
         </div>
         <button type="submit" class="btn">
-          <a href="https://api.whatsapp.com/send/?phone=%2B6282349086713&text&type=phone_number&app_absent=0"
-            target="_blank">Kirim Pesan</a>
+          Kirim Pesan
+        </button>
+        <!-- Add icon library -->
+        <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Add font awesome icons to buttons (note that the fa-spin class rotates the icon) -->
+        <button class="buttonload">
+          <i class="fa fa-spinner fa-spin"></i>Loading
         </button>
       </form>
     </div>
