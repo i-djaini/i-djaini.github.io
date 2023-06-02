@@ -28,12 +28,14 @@ nav {
   right: 0;
   left: 0;
   z-index: 11;
-  border-bottom: 1px solid rgb(255, 255, 255,0.2);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
 }
+
 nav .logo h1 {
   font-size: 30px;
   color: #7b7bdf;
 }
+
 nav .link-list li {
   display: inline;
   margin: 0 3px;
@@ -42,16 +44,20 @@ nav .link-list li {
   transition: all 0.5s;
   box-shadow: #6b6a6a;
 }
+
 nav .link-list li:hover,
 nav .link-list li:active {
   background-color: #7b7bdf;
 
 }
+
 nav ul li a {
   font-size: 1.1rem;
   color: white;
 }
-#check, .hmb-menu {
+
+#check,
+.hmb-menu {
   display: none;
 }
 
@@ -62,17 +68,16 @@ nav ul li a {
   display: flex;
   align-items: center;
 }
+
 .hero .content {
   width: 100%;
   height: 100vh;
   display: flex;
-  padding: 0 6rem;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  background-image: url(../img/wave.svg);
-  background-position: center;
-  background-size: cover;
+  padding: 0 10rem;
 }
+
 .hero .content h1 {
   font-size: 2.4rem;
 }
@@ -104,6 +109,7 @@ nav ul li a {
   font-size: 1rem;
   color: #000000;
 }
+
 .hero .content button:hover {
   background-color: #7b7bdf;
 }
@@ -111,6 +117,22 @@ nav ul li a {
 .hero img {
   width: 23rem;
   border-radius: 50%;
+  transform: translate(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-40px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 /* ! About Section */
@@ -118,7 +140,7 @@ nav ul li a {
 .project .project-title,
 .kontak .kontak-title {
   text-align: center;
-  padding: 5rem 0 5rem;
+  padding: 6rem 5rem;
   font-size: 2.5rem;
 }
 
@@ -154,10 +176,7 @@ nav ul li a {
 
 /* ! Project Section */
 .project {
-  background-image: url(../img/polygon-scatter.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #272727;
 }
 
 .project .project-content {
@@ -170,11 +189,8 @@ nav ul li a {
 
 .project .project-content .row {
   margin: 1rem;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  background: #4d4949;
-  -webkit-box-shadow: 13px 13px 34px #444040, -13px -13px 34px #565252;
-  box-shadow: 13px 13px 34px #444040, -13px -13px 34px #565252;
+  border: 1px solid rgb(255, 255, 255,0.2);
+  border-radius: 10px;
 }
 
 .project .project-content .row a {
@@ -186,6 +202,7 @@ nav ul li a {
   width: 27rem;
   border-radius: 10px;
 }
+
 .project .project-content .row:hover img {
   filter: blur(2px);
 }
@@ -205,11 +222,12 @@ nav ul li a {
   transform: translate(-50%, -50%);
 }
 
-.project .project-content .row:hover  {
+.project .project-content .row:hover {
   transform: scale(1.1);
   transition: 0.3s;
   height: 100%;
   border: 1px solid #7b7bdf;
+  border-radius: 10px;
 }
 
 /* ! Kontak Section */
@@ -222,18 +240,17 @@ nav ul li a {
 
 .kontak .kontak-text .text {
   flex: 1 1 45rem;
-  margin: 3rem;
+  margin: 3rem 1rem;
   padding: 3rem;
   background: #4d4949;
   box-shadow: 8px 8px 16px #484545,
     -8px -8px 16px #524d4d;
-  padding: 3rem;
 }
 
 .kontak .kontak-text p {
   font-size: 1.2rem;
   font-weight: 300;
-  margin-bottom: 10rem;
+  margin: 5rem 0;
 }
 
 .kontak .kontak-text .sosial {
@@ -246,13 +263,13 @@ nav ul li a {
 }
 
 .kontak .text a:hover {
-  color: #7b7bdf;
+  color: rgb(125, 125, 222);
 }
 
 .kontak .kontak-text form {
   flex: 1 1 45rem;
-  padding: 3rem;
-  margin: 3rem;
+  padding: 1rem 3rem;
+  margin: 3rem 1rem;
   border-radius: 1px;
   background: #4d4949;
   box-shadow: 8px 8px 16px #484545,
@@ -275,7 +292,8 @@ nav ul li a {
 
 .kontak .kontak-text form input {
   width: 100%;
-  font-size: 1rem;
+  font-size: 12px;
+  padding: 7px 0;
   margin-left: 1rem;
   background: none;
   color: white;
@@ -293,15 +311,14 @@ nav ul li a {
 
 .alert {
   display: none;
-  padding: 20px;
-  background-color: #535353; /* Red */
   color: white;
-  margin-bottom: 15px;
+  text-align: center;
 }
 
 
 textarea {
   width: 100%;
+  height: 7rem;
   font-size: 1rem;
   margin-left: 1rem;
   background: none;
@@ -311,7 +328,8 @@ textarea {
   font-family: 'Public Sans', sans-serif;
 }
 
-.kontak .kontak-text button, .buttonload {
+.kontak .kontak-text button,
+.buttonload {
   padding: 1rem;
   font-size: 1rem;
   background-color: #6b6a6a;
@@ -322,6 +340,7 @@ textarea {
 .buttonload {
   display: none;
 }
+
 .buttonload i {
   margin-right: 10px;
 }
@@ -368,21 +387,25 @@ footer .credit a {
     top: -100rem;
     background-color: hsla(0, 1%, 20%, 0.4);
   }
+
   nav .link-list li {
     display: block;
     margin: 2rem;
   }
+
   nav .link-list li:hover,
   nav .link-list li a:hover {
     border-bottom: none;
-    color: #7b7bdf;;
+    color: #7b7bdf;
+    ;
     background-color: transparent;
   }
+
   .hmb-menu {
     display: block;
   }
 
-  #check:checked ~ ul {
+  #check:checked~ul {
     top: 4.9rem;
     transition: all 0.5s;
   }
@@ -390,8 +413,9 @@ footer .credit a {
   .hero .content {
     flex-wrap: wrap-reverse;
   }
+
   .hero .content {
-    padding: 16rem 6rem ;
+    padding: 16rem 6rem;
   }
 
   .kontak .kontak-text {
@@ -412,15 +436,18 @@ footer .credit a {
   .hero {
     text-align: center;
   }
+
   .hero .content {
-    padding: 25rem 6rem ;
+    padding: 25rem 6rem;
   }
+
   .hero .content .picture {
     margin-bottom: 2rem;
   }
+
   .hero .content .me p {
     max-width: 100%;
-  } 
+  }
 
 
   .hero .content button .p2 a {
@@ -434,17 +461,20 @@ footer .credit a {
   .project .project-content .row img {
     width: 37rem;
   }
+
   .kontak .kontak-text .text {
     margin: 0 1rem;
     align-items: center;
   }
+
   .kontak .kontak-text form {
     margin: 0 1rem;
   }
+
   .kontak .kontak-text form {
     padding: 0 1rem;
   }
-  
+
 
   .kontak .kontak-text .kontak-icon .sosial {
     width: 1.5rem;
