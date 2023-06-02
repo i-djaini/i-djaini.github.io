@@ -22,16 +22,17 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(123, 123, 223,0.8);
-  padding: 0.5rem 4%;
+  padding: 1rem 4%;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 11;
+  border-bottom: 1px solid rgb(255, 255, 255,0.2);
 }
 nav .logo h1 {
   font-size: 30px;
+  color: #7b7bdf;
 }
 nav .link-list li {
   display: inline;
@@ -39,9 +40,11 @@ nav .link-list li {
   padding: 7px;
   border-radius: 5px;
   transition: all 0.5s;
+  box-shadow: #6b6a6a;
 }
-nav .link-list li:hover {
-  background-color: #9696ce;
+nav .link-list li:hover,
+nav .link-list li:active {
+  background-color: #7b7bdf;
 
 }
 nav ul li a {
@@ -352,7 +355,7 @@ footer .credit a {
   }
 
   #check:checked ~ ul {
-    top: 5rem;
+    top: 4.9rem;
     transition: all 0.5s;
   }
 
