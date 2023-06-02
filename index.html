@@ -137,22 +137,35 @@
         <a href=""><i data-feather="linkedin" class="sosial"></i></a>
         <a href=""><i data-feather="github" class="sosial"></i></a>
       </div>
-      <form action="">
+      <form action="" name='Idev-Contact-Form'>
+        <div class="alert">
+        </div>
         <div class="row">
           <i data-feather="user" class="icon"></i>
-          <input type="text" placeholder="Nama">
+          <input type="text" placeholder="Nama" name="Nama">
         </div>
         <div class="row">
           <i data-feather="mail" class="icon"></i>
-          <input type="email" placeholder="Email">
+          <input type="email" placeholder="Email" name="Email">
         </div>
-        <div class="row">
-          <i data-feather="phone" class="icon"></i>
-          <input type="number" placeholder="No Hp">
+        <div class="row" id="pesan">
+          <div class="row-pesan">
+            <i data-feather="message-square" class="icon"></i>
+            <textarea name="Pesan" id="" cols="20" rows="10" placeholder="Pesan"></textarea>
+          </div>
+
         </div>
         <div class="button">
-          <button>
+          <button type="submit">
             Kirim Pesan
+          </button>
+          <!-- Add icon library -->
+          <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+          <!-- Add font awesome icons to buttons (note that the fa-spin class rotates the icon) -->
+          <button class="buttonload">
+            <i class="fa fa-spinner fa-spin"></i>Loading
           </button>
         </div>
       </form>
@@ -180,6 +193,45 @@
   </script>
 
   <script src="js/script.js"></script>
+
+  <!-- ! Contact-Form -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbysOzP2dBm54C23luZD03NuLjd9rh-a_3fJEcCts2bgJNxyLNgbDQbt34KNMyRuURlm9A/exec';
+    const form = document.forms['Idev-Contact-Form'];
+    const btnKirim = document.querySelector('button[type="submit"]');
+    const btnLoading = document.querySelector('.buttonload');
+    const myAlert = document.querySelector('.alert');
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      // Ketika tombol submit diklik
+      btnLoading.style.display = 'block';
+      btnKirim.style.display = 'none';
+      myAlert.style.display = 'none'; // Sembunyikan alert sebelum pengiriman
+  
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          console.log('Success!', response);
+          btnLoading.style.display = 'none';
+          btnKirim.style.display = 'block';
+          form.reset(); // Reset form setelah pengiriman berhasil
+          myAlert.textContent = 'Terima Kasih! Pesan berhasil dikirim.';
+          myAlert.classList.remove('alert-error');
+          myAlert.classList.add('alert-success');
+          myAlert.style.display = 'block'; // Tampilkan alert sukses
+        })
+        .catch(error => {
+          console.error('Error!', error.message);
+          btnLoading.style.display = 'none';
+          btnKirim.style.display = 'block';
+          myAlert.textContent = 'Terjadi kesalahan saat mengirim pesan.';
+          myAlert.classList.remove('alert-success');
+          myAlert.classList.add('alert-error');
+          myAlert.style.display = 'block'; // Tampilkan alert gagal
+        });
+    });
+  </script>
+  
 </body>
 
 </html>

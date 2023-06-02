@@ -286,16 +286,44 @@ nav ul li a {
   height: 1.5rem;
 }
 
-.kontak .kontak-text .button {
-  padding: 1rem 0;
+.kontak .kontak-text form .row-pesan {
+  display: flex;
+  width: 100%;
 }
 
-.kontak .kontak-text button {
+.alert {
+  display: none;
+  padding: 20px;
+  background-color: #535353; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+
+textarea {
+  width: 100%;
+  font-size: 1rem;
+  margin-left: 1rem;
+  background: none;
+  color: white;
+  outline: none;
+  resize: none;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.kontak .kontak-text button, .buttonload {
   padding: 1rem;
   font-size: 1rem;
   background-color: #6b6a6a;
   color: #ffffff;
   cursor: pointer;
+}
+
+.buttonload {
+  display: none;
+}
+.buttonload i {
+  margin-right: 10px;
 }
 
 .kontak .kontak-text button:hover {
@@ -358,9 +386,6 @@ footer .credit a {
     top: 4.9rem;
     transition: all 0.5s;
   }
-
-
-
 
   .hero .content {
     flex-wrap: wrap-reverse;
