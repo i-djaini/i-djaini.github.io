@@ -434,6 +434,17 @@ footer .credit a {
   .project .project-content .row img {
     width: 37rem;
   }
+  .kontak .kontak-text .text {
+    margin: 0 1rem;
+    align-items: center;
+  }
+  .kontak .kontak-text form {
+    margin: 0 1rem;
+  }
+  .kontak .kontak-text form {
+    padding: 0 1rem;
+  }
+  
 
   .kontak .kontak-text .kontak-icon .sosial {
     width: 1.5rem;
