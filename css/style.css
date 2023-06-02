@@ -387,6 +387,9 @@ footer .credit a {
   .hero .content {
     padding: 25rem 6rem ;
   }
+  .hero .content .picture {
+    margin-bottom: 2rem;
+  }
   .hero .content .me p {
     max-width: 100%;
   } 
