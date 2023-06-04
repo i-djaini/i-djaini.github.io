@@ -362,9 +362,9 @@ textarea {
     display: block;
     position: absolute;
     text-align: center;
-    width: 50%;
-    right: -100rem;
-    top: 4.3rem;
+    width: 100%;
+    right: 0;
+    top: -100rem;
     background-color: #892be22d;
     transition: all .5s ease-in-out;
   }
@@ -372,6 +372,7 @@ textarea {
   nav ul li {
     display: block;
     padding: 1.9rem 0;
+    font-size: 1.5rem;
   }
 
   nav ul li:hover {
@@ -388,7 +389,7 @@ textarea {
   }
 
   #menu:checked~ul {
-    right: 0;
+    top: 4.3rem;
   }
 
   /* About Responsive */
@@ -398,7 +399,7 @@ textarea {
   }
 
   .about-content img {
-    width: 60%;
+    width: 25rem;
   }
 
   .about .about-content .about-info {
@@ -408,6 +409,7 @@ textarea {
   .about .about-content .about-info p {
     font-size: 1.5rem;
   }
+
   /* kontak responsive */
   .kontak .kontak-form form {
     width: 100rem;
@@ -423,24 +425,7 @@ textarea {
   .produk .produk-content .card img {
     width: 13rem;
   }
-
-  /* kontak responsive */
-  .kontak .kontak-form .kontak-btn button {
-    padding: .4rem;
-    font-size: .6rem;
-  }
-  .kontak .kontak-form .kontak-btn {
-    margin-top: .4rem;
-  }
 }
-
-
-
-
-
-
-
-
 
 /* Handphone */
 @media (max-width: 480px) {
@@ -462,13 +447,30 @@ textarea {
     font-size: 1.1rem;
     padding: 2px 6px;
   }
+
+  .kontak .kontak-form form {
+    padding: 1rem 10px;
+  }
+
+  .kontak .kontak-form {
+    padding: 3rem 10px;
+  }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .produk .produk-content .card {
     width: 9.6rem;
   }
+
   .produk .produk-content .card img {
     width: 9rem;
+  }
+
+  .kontak .kontak-form form {
+    padding: 0;
+  }
+
+  .kontak .kontak-form {
+    padding: 3rem 10px;
   }
 }
