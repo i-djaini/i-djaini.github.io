@@ -129,24 +129,30 @@ body {
 
 /* ! Style tentang kami */
 .about {
-  padding: 6rem;
+  padding: 9rem 0;
+  background-color: #414141;;
 }
 
 .about h2 {
   text-align: center;
-  font-size: 2.5rem;
-  padding-bottom: 5rem;
+  font-size: 2rem;
+  padding-bottom: 9rem;
   color: white;
 }
 
 .about .about-content p {
-  font-weight: 300;
-  margin: auto 4rem;
+  font-weight: 200;
+  margin: 0 2rem;
+  font-size: 1.3rem;
   text-align: justify;
 }
 
-.about .about-content img {
+.about .about-content .img {
+  border: 1px solid #c6d8d2;
   width: 30rem;
+}
+.about .about-content img {
+  width: 28rem;
   object-fit: cover;
   border: 0.1px solid #2f3030;
 }
@@ -154,24 +160,23 @@ body {
 .about .about-content {
   display: flex;
   word-spacing: 3px;
-  font-size: 1.5rem;
+  align-items: center;
   justify-content: center;
   line-height: 1.6;
-  margin: 0 2rem;
+  margin: 0 7rem;
 }
 
 
 /* ! Produk */
 .produk {
-  padding: 6rem;
-  background-color: #414141;
+  padding: 6rem 10px;
   width: 100%;
 }
 
 .produk h2,
 .contact h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
 
 }
 
@@ -197,7 +202,6 @@ body {
   text-align: center;
   font-size: 1.2rem;
   margin: 0 1rem;
-
 }
 
 .produk .produk-list img {
@@ -230,7 +234,8 @@ body {
 
 /* ! Contact */
 .contact {
-  padding: 3rem 0
+  padding: 3rem 0;
+  background-color: #414141;;
 }
 
 .contact p {
@@ -318,8 +323,8 @@ body {
 .alert {
   text-align: center;
   display: none;
-  padding: 20px;
-  background-color: #ace7d2;
+  padding: 11px;
+  background-color: #bff5e2;
   color: black;
   margin-bottom: 15px;
   font-size: 1.1rem;
