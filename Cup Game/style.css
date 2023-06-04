@@ -1,0 +1,125 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Clearfix */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+@font-face {
+	font-family: 'shadow';
+	src: url(ShadowsIntoLight-Regular.ttf);
+}
+
+.parent {
+	width: 800px;
+	margin: auto;
+}
+
+body {
+	font-family: 'shadow', Arial, Helvetica, sans-serif;
+	font-size: 12px/18px;
+	color: black;
+}
+
+h1 {
+    font-family: 'shadow', Arial, Helvetica, sans-serif;
+	font-size: 65px;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-shadow: 2px 0 2px rgb(86, 107, 91);
+}
+
+h2 {
+    font-family: 'shadow', Arial, Helvetica, sans-serif;
+	font-size: 65px;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	text-shadow: 2px 0 2px rgb(86, 107, 91);
+}
+
+.container {
+	border: 3px solid black;
+	width: 800px;
+	height: 280px;
+	margin: auto;
+	display: flex;
+	transition: .5s;
+	justify-content: center;
+	position: relative;
+}
+
+a:hover {
+	filter: drop-shadow(0px 30px 10px rgba(0, 0, 0, 0.5));
+}
+
+.cup {
+    position: relative;
+    transition: all 0.5s;
+}
+
+.cup:hover {
+    transform: translateY(-20px);
+}
+
+.cup img {
+    transition: box-shadow 0.5s;
+}
+
+.cup:hover img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+}

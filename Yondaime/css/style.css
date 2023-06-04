@@ -93,39 +93,60 @@ ul li:hover {
 .hero .hero-img img {
   width: 23rem;
   border-radius: 50%;
+  transform: translate(0);
+  animation: float 5s ease-in-out infinite;
+}
+@keyframes float  {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* Section Profile */
 .profile {
-  background-color: #ffffff;
   padding: 5rem 0;
+  background-color: rgb(255, 255, 255);
 }
 
 .profile h1 {
   text-align: center;
   font-size: 2.3rem;
+  color: #ffd700;
 }
 
 .profile main {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 0 9rem;
+  justify-content: center;
   font-size: 1.4rem;
   margin: 6rem 0;
+  gap: 2rem;
 }
 
 .profile main p {
   font-weight: 200;
   line-height: 1.7rem;
+  word-spacing: .2rem;
 }
 
 .row-left,
 .row-right {
   width: 46%;
-  border-radius: 9px;
-  background: #fff3af;
-  box-shadow: 11px 11px 19px #e0d69a,
-    -11px -11px 19px #ffffc4;
+  border-radius: 3px;
   padding: 2rem;
+  border: 1px solid rgba(255, 217, 0, 0.253);
+}
+
+
+/* Media Query Responsive */
+@media (max-width : 1000px) {
+  html {
+    font-size: 79%;
+  }
 }
