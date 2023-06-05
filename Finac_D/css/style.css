@@ -117,7 +117,6 @@ nav .list a:hover {
 .about .about-content {
   display: flex;
   justify-content: center;
-  margin: 0 5%;
   align-items: center;
   padding-bottom: 6rem;
 }
@@ -147,23 +146,23 @@ nav .list a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 2rem;
 }
 
 .kelas .row .row-item img {
   height: 18rem;
   width: 100%;
   object-fit: cover;
-  border-radius: 5px;
+  cursor: pointer;
 }
 
 .kelas .row .row-item {
   width: 18rem;
-  border-radius: 5px;
-  margin: 2rem 1rem;
-  border: 1px solid #8d6160;
+  border-radius: 10px;
   background-color: #8d6160;
-  box-shadow: #b9b7b7;
+  box-shadow: -5px -5px 4px #8d616048;
   color: #e4e0e0;
+  overflow: hidden;
 }
 
 .kelas .row .row-item .info {
