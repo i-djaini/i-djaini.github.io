@@ -93,7 +93,7 @@ body {
 }
 
 .hero .content h1 {
-  font-size: 3.4em;
+  font-size: 2.6rem;
   color: #ffffff;
   line-height: 3.7rem;
 }
@@ -104,7 +104,7 @@ body {
 
 .hero .content p {
   font-weight: 200;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #ffffff;
   padding-bottom: 1rem;
 }
@@ -112,12 +112,12 @@ body {
 .hero .content button {
   cursor: pointer;
   background-color: #ace7d2;
-  padding: 0.8rem;
+  padding: 1rem;
   border-radius: 3px;
 }
 
 .hero .content button a {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-decoration: none;
   color: black;
   margin: 0.5rem 1rem;
@@ -148,7 +148,6 @@ body {
 }
 
 .about .about-content .img {
-  border: 1px solid #c6d8d2;
   width: 30rem;
 }
 .about .about-content img {
@@ -169,7 +168,7 @@ body {
 
 /* ! Produk */
 .produk {
-  padding: 6rem 10px;
+  padding: 6rem 0;
   width: 100%;
 }
 
@@ -202,14 +201,15 @@ body {
   text-align: center;
   font-size: 1.2rem;
   margin: 0 1rem;
+  overflow: hidden;
 }
 
 .produk .produk-list img {
-  width: 18rem;
+  width: 19rem;
   height: 20rem;
   object-fit: cover;
   border-radius: 2px;
-  border: 0.1px solid #626866;
+  border: 0.1px solid #6268664b;
 }
 
 .produk .produk-list .produk-card .title {
@@ -220,12 +220,12 @@ body {
   display: block;
   margin: auto;
   padding: 0.8rem;
-  border-radius: 5%;
+  border-radius: 7px;
   background-color: #ace7d2;
   cursor: pointer;
 }
 .produk button h4 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 300;
 }
 .produk button:hover {
@@ -234,8 +234,8 @@ body {
 
 /* ! Contact */
 .contact {
-  padding: 3rem 0;
-  background-color: #414141;;
+  padding: 3rem 0 6rem;
+  background-color: #414141;
 }
 
 .contact p {
@@ -249,7 +249,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-top: 4rem;
-  background-color: #201f1f;
   padding: 0 1rem;
 }
 
@@ -262,7 +261,7 @@ body {
 
 .contact .row form {
   flex: 1 1 45rem;
-  padding: 3rem 1rem;
+  padding: 0 1rem;
   background-color: #7e7c7c;
 }
 
@@ -270,8 +269,9 @@ body {
   display: flex;
   align-items: center;
   margin-top: 2rem;
+  border-radius: 7px;
   background-color: #000000;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.658);
   padding-left: 1rem;
 }
 .contact .row form .input-group:hover {
@@ -299,8 +299,9 @@ body {
   background-color: #ffffff;
   font-size: 1.6rem;
   border-radius: 0.5%;
-  border: 0.1px solid black;
+  border: 0.1px solid rgba(0, 0, 0, 0.658);
   cursor: pointer;
+  border-radius: 7px;
 }
 .buttonload i {
   margin-right: 1rem;
@@ -337,7 +338,6 @@ footer {
   background-color: #ace7d2;
   text-align: center;
   padding: 1rem 0;
-  margin-top: 4rem;
 }
 
 footer .social {
@@ -362,8 +362,9 @@ footer .credit a {
   font-weight: 700;
 }
 
-footer .social a:hover {
-  color: rgb(173, 172, 172);
+footer .social .sosial:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 5px #201f1f80;
 }
 
 
@@ -438,9 +439,6 @@ footer .social a:hover {
 
   .about .about-content {
     margin: 0;
-  }
-  .produk-list img {
-    width: 10rem;
   }
   
 }

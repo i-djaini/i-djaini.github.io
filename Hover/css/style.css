@@ -60,6 +60,7 @@ section .container .box-title {
 section .container .box-title p {
   font-weight: 200;
   margin-top: 0.3rem;
+  line-height: 2rem;
 }
 
 section .container .row .box:hover .box-title {

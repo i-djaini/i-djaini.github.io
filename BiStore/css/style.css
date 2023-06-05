@@ -30,6 +30,10 @@ nav .logo h1 {
   font-weight: 800;
 }
 
+nav .logo h1 span {
+  color: #8a2be2;
+}
+
 #menu,
 label {
   display: none;
@@ -83,7 +87,7 @@ nav ul li:hover {
   background-color: #8a2be2;
   border: 1px solid rgba(255, 255, 255, 0.397);
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .hero .row-left button a {
@@ -195,7 +199,7 @@ nav ul li:hover {
 }
 
 .produk .produk-content .card {
-  border: 1px solid rgba(137, 43, 226, 0.425);
+  box-shadow: -1px -1px 10px rgba(137, 43, 226, 0.425);
 }
 
 .produk .produk-content .card img {
@@ -232,6 +236,7 @@ nav ul li:hover {
   padding: 3rem;
   background-color: rgb(219, 204, 255);
   border-radius: 10px;
+  box-shadow: -1px -1px 20px rgba(137, 43, 226, 0.226);
 }
 
 .kontak .kontak-form .kontak-input {
@@ -252,7 +257,7 @@ nav ul li:hover {
   padding: 1.3rem;
   background: none;
   border: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 textarea {
@@ -260,14 +265,15 @@ textarea {
   padding: 1.3rem;
   background: none;
   border: none;
-  font-size: 1rem;
+  font-size: 1.1em;
   background: none;
   outline: none;
   resize: none;
+  line-height: 1.5;
 }
 
 .icon-pesan {
-  margin-bottom: 8.9rem;
+  margin-bottom: 14.6rem;
   color: #892be244;
 }
 
@@ -289,6 +295,7 @@ textarea {
   padding: 1rem;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  border-radius: 8px;
 }
 
 .icon-sosial {
@@ -301,7 +308,7 @@ textarea {
 
 .kontak .kontak-form .kontak-btn button:hover {
   background-color: rgb(121, 38, 199);
-  transform: translateY(-1px);
+  transform: translateY(-3px);
 }
 
 .icon-sosial:hover {
@@ -418,34 +425,22 @@ textarea {
   /* Produk Section Responsive */
 
   .produk .produk-content .card {
-    width: 14rem;
+    width: 18rem;
     overflow: hidden;
   }
 
   .produk .produk-content .card img {
-    width: 13rem;
+    width: 17rem;
   }
 }
 
 /* Handphone */
 @media (max-width: 480px) {
 
-  .produk .produk-content .card {
-    width: 14rem;
-    overflow: hidden;
-  }
 
-  .produk .produk-content .card img {
-    width: 13rem;
-  }
 
   .produk .produk-content .card .card-info {
     font-size: 1.1rem;
-  }
-
-  .produk .card button {
-    font-size: 1.1rem;
-    padding: 2px 6px;
   }
 
   .kontak .kontak-form form {
@@ -458,6 +453,15 @@ textarea {
 }
 
 @media (max-width: 350px) {
+  .produk .produk-content .card {
+    width: 16.6rem;
+    overflow: hidden;
+  }
+
+  .produk .produk-content .card img {
+    width: 16rem;
+  }
+
   .kontak .kontak-form form {
     padding: 0;
   }
