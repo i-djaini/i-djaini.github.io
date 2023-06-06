@@ -176,6 +176,7 @@ nav ul li a {
 
 /* ! Project Section */
 .project {
+  padding: 0 10px 9rem;
   background-color: #272727;
 }
 
@@ -184,13 +185,12 @@ nav ul li a {
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
-  padding-bottom: 4rem;
+  gap: 1.6rem;
 }
 
 .project .project-content .row {
-  margin: 1rem;
-  border: 1px solid rgb(255, 255, 255,0.2);
-  border-radius: 10px;
+  border: 2px solid rgb(255, 255, 255,0.2);
+  overflow: hidden;
 }
 
 .project .project-content .row a {
@@ -200,7 +200,6 @@ nav ul li a {
 
 .project .project-content .row img {
   width: 27rem;
-  border-radius: 10px;
 }
 
 .project .project-content .row:hover img {
@@ -224,10 +223,9 @@ nav ul li a {
 
 .project .project-content .row:hover {
   transform: scale(1.1);
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   height: 100%;
   border: 1px solid #7b7bdf;
-  border-radius: 10px;
 }
 
 /* ! Kontak Section */
