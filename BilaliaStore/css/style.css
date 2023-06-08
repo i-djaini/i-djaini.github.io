@@ -440,5 +440,8 @@ footer .social .sosial:hover {
   .about .about-content {
     margin: 0;
   }
+  .contact .row form {
+    padding-bottom: 2.4rem ;
+  }
   
 }

@@ -189,8 +189,9 @@ nav ul li a {
 }
 
 .project .project-content .row {
-  border: 2px solid rgb(255, 255, 255,0.2);
+  border: 1px solid rgb(255, 255, 255,0.2);
   overflow: hidden;
+  position: relative;
 }
 
 .project .project-content .row a {
@@ -200,32 +201,34 @@ nav ul li a {
 
 .project .project-content .row img {
   width: 27rem;
+  object-fit: cover;
+  transition: .3s ease-in-out;
 }
 
 .project .project-content .row:hover img {
   filter: blur(2px);
+  transform: scale(1.1);
 }
+
 
 .project .project-content .row .external-link {
-  display: none;
-}
-
-.project .project-content .row:hover .external-link {
   display: block;
   position: absolute;
   width: 3rem;
   height: 3rem;
-  top: 50%;
-  left: 50%;
-  color: #7b7bdf;
-  transform: translate(-50%, -50%);
+  color: #ffffff;
+  top: 40%;
+  left: 45%;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+.project .project-content .row:hover .external-link {
+  opacity: 1;
 }
 
 .project .project-content .row:hover {
-  transform: scale(1.1);
   transition: 0.3s ease-in-out;
-  height: 100%;
-  border: 1px solid #7b7bdf;
+  border: 1px solid #ffffff;
 }
 
 /* ! Kontak Section */

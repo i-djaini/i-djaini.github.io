@@ -8,8 +8,8 @@
 }
 
 body {
-  font-family: 'Public Sans';
-  background-color: rgba(253, 253, 253, 0.637);
+  font-family: 'Inconsolata';
+  background-color: rgb(255, 255, 255);
 }
 
 /* Navbar */
@@ -22,6 +22,7 @@ nav {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 11;
 }
 
 .logo {
@@ -46,7 +47,7 @@ ul li {
 
 ul li a {
   color: black;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 ul li:hover {
@@ -81,8 +82,8 @@ ul li:hover {
 }
 
 .hero .hero-title p {
-  font-weight: 200;
-  font-size: 1.2rem;
+  font-weight: 400;
+  font-size: 1.4rem;
 }
 
 .hero .hero-img {
@@ -111,13 +112,12 @@ ul li:hover {
 /* Section Profile */
 .profile {
   padding: 5rem 0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(231, 231, 231);
 }
 
 .profile h1 {
   text-align: center;
   font-size: 2.3rem;
-  color: #ffd700;
 }
 
 .profile main {
@@ -130,7 +130,7 @@ ul li:hover {
 }
 
 .profile main p {
-  font-weight: 200;
+  font-weight: 400;
   line-height: 1.7rem;
   word-spacing: .2rem;
 }
@@ -140,7 +140,7 @@ ul li:hover {
   width: 46%;
   border-radius: 3px;
   padding: 2rem;
-  border: 1px solid rgba(255, 217, 0, 0.253);
+  box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.247);
 }
 
 
