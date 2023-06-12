@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 1rem;
+}
+
+.border-box {
+  padding: .5rem;
+  border: 5px solid black;
+}
+
+.head {
+  width: 100%;
+  background-color: rgb(213, 19, 219);
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.container .box {
+  width: 40%;
+}
+aside {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(69, 69, 255);
+}
+
+nav {
+  height: 20rem;
+  background-color: rgb(240, 46, 46);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 60%;
+  background-color: rgb(248, 157, 53);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgb(75, 67, 60);
+}
+footer {
+  color: antiquewhite;
+}
